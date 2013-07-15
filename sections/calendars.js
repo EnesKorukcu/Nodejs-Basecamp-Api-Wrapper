@@ -255,6 +255,13 @@ module.exports = function() {
                         'response_code': '200',
                         'message': 'calendar updated'
                     },
+                    '204': {
+                        'headers': {
+                            'Content-Type': 'application/json'
+                        },
+                        'response_code': '200',
+                        'message': 'calendar updated'
+                    },
                     '301': {
                         'headers': {
                             'Content-Type': 'application/json'
@@ -361,7 +368,7 @@ module.exports = function() {
                 }
             }
         }
-    }
+    };
 
     return obj;
 

@@ -1,0 +1,39 @@
+
+Calendars
+
+(Post Request)
+calendars/:account_id
+-Creates New Calendar
+    Get Params
+        account_id
+    Post Params
+        name
+
+(Delete Request)
+calendars/:account_id/calendar/:calendar_id
+-Deletes A Calendar
+    Get Params
+        account_id
+        calendar_id
+
+(Get Request)
+calendars/:account_id
+-Gets All Calendars
+    Get Params
+        account_id
+
+(Get Request)
+calendars/:account_id/calendar/:calendar_id
+-Gets A Calendar
+    Get Params
+        account_id
+        calendar_id
+
+(Put Request)
+calendars/:account_id/calendar/:calendar_id
+-Updates A Calendar
+    Get Params
+        account_id
+        calendar_id
+    Post Params
+        name

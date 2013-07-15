@@ -1,0 +1,22 @@
+
+People
+
+(Get Request)
+people/:account_id
+-Gets People On The Account
+    Get Params
+        account_id
+
+(Get Request)
+people/:account_id/person/:user_id
+-Gets A Person On The Account
+    Get Params
+        account_id
+        user_id
+
+(Delete Request)
+people/:account_id/person/:user_id
+-Deletes A Person On The Account
+    Get Params
+        account_id
+        user_id

@@ -1,0 +1,101 @@
+
+Calendar_Events
+
+(Post Request)
+calendar_events/:account_id/calendar/:calendar_id
+-Creates New Calendar Event Associated With A Calendar
+    Get Params
+        account_id
+        calendar_id
+    Post Params
+        summary
+        description
+        starts_at // 2013-07-17T09:30:00+03:00
+        ends_at // 2013-07-18T11:30:00+03:00
+
+(Post Request)
+calendar_events/:account_id/project/:project_id
+-Creates New Calendar Event Associated With A Project
+    Get Params
+        account_id
+        calendar_id
+    Post Params
+        summary
+        description
+        starts_at // 2013-07-17T09:30:00+03:00
+        ends_at // 2013-07-18T11:30:00+03:00
+
+(Delete Request)
+calendar_events/:account_id/calendar/:calendar_id/event/:event_id
+-Deletes An Event Associated With A Calendar With Given Event Id
+    Get Params
+        account_id
+        calendar_id
+        event_id
+
+(Delete Request)
+calendar_events/:account_id/project/:project_id/event/:event_id
+-Deletes An Event Associated With A Project With Given Event Id
+    Get Params
+        account_id
+        project_id
+        event_id
+
+(Get Request)
+calendar_events/:account_id/calendar/:calendar_id/event/:event_id
+-Gets An Event Associated With A Calendar With Given Event Id
+    Get Params
+        account_id
+        calendar_id
+        event_id
+
+(Get Request)
+calendar_events/:account_id/project/:project_id/event/:event_id
+-Gets An Event Associated With A Project With Given Event Id
+    Get Params
+        account_id
+        project_id
+        event_id
+
+(Get Request)
+calendar_events/:account_id/calendar/:calendar_id?past=(true/false)
+-Gets All Events Associated With A Calendar With Given Calendar Id
+    You can send past parameter if you want past events
+    Get Params
+        account_id
+        calendar_id
+        past (optional)
+
+(Get Request)
+calendar_events/:account_id/project/:project_id?past=(true/false)
+-Gets All Events Associated With A Project With Given Project Id
+    Get Params
+        account_id
+        project_id
+        past (optional)
+
+(Put Request)
+calendar_events/:account_id/calendar/:calendar_id
+-Updates An Event Associated With A Calendar With Posted Event Id
+    Get Params
+        account_id
+        calendar_id
+    Post Params
+        summary
+        description
+        starts_at // 2013-07-17T09:30:00+03:00
+        ends_at // 2013-07-18T11:30:00+03:00
+        event_id
+
+(Put Request)
+calendar_events/:account_id/project/:project_id
+-Updates An Event Associated With A Project With Posted Event Id
+    Get Params
+        account_id
+        project_id
+    Post Params
+        summary
+        description
+        starts_at // 2013-07-17T09:30:00+03:00
+        ends_at // 2013-07-18T11:30:00+03:00
+        event_id

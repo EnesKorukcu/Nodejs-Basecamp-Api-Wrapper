@@ -3,7 +3,7 @@
 
 module.exports = function(app, comments, utilities, config) {
 
-    app.post('/comments/:account_id/project/:project_id/section/:section/section_object_id/:section_object_id', function(req, res) {
+    app.post('/comments/:account_id/project/:project_id/section/:section/:section_object_id', function(req, res) {
 
         var required_fields = [
             'content', 'subscribers'

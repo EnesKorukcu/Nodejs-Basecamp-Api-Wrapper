@@ -1,0 +1,24 @@
+
+Attachments
+
+(Get Request)
+attachments/:account_id
+-Gets All Attachments On The Account
+    Get params
+        account_id
+
+(Post Request)
+attachments/:account_id
+-Sends File To BC And Returns A Attachment Token
+    Attachment Tokens Are Used In Comments, Uploads, etc..
+    Get Params
+        account_id
+    Post Params
+        media_object ( file )
+
+(Get Request)
+attachments/:account_id/project/:project_id
+-Gets All Attachments Of A Project
+    Get params
+        account_id
+        project_id

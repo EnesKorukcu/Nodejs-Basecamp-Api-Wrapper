@@ -8,6 +8,9 @@ var config      = require('./config.js')();
 var utilities   = require('./utilities.js')();
 utilities.querystring = require('querystring');
 
+// body parser for post requests
+app.use(express.bodyParser());
+
 // sections
 var accesses            = require('./sections/accesses.js')();
 var attachments         = require('./sections/attachments.js')();
@@ -39,9 +42,6 @@ todolists.routes           = require('./routes/todolists.js')(app, todolists, ut
 todos.routes               = require('./routes/todos.js')(app, todos, utilities, config);
 topics.routes              = require('./routes/topics.js')(app, topics, utilities, config);
 uploads.routes             = require('./routes/uploads.js')(app, uploads, utilities, config);
-
-// body parser for post requests
-app.use(express.bodyParser());
 
 // start app
 app.listen(3000);

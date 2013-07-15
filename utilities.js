@@ -81,6 +81,7 @@ module.exports = function() {
                             'headers': '',
                             'data': ''
                         };
+                        console.log('post request error error 500');
                         callback(response_object);
                     });
 
@@ -124,6 +125,47 @@ module.exports = function() {
                     });
 
                 req.end();
+
+                /*
+
+                var req = https.request(options, function(res) {
+
+                    var data = '';
+
+                    var response_object = {
+                        'status_code': res.statusCode,
+                        'headers': res.headers
+                    };
+
+                    res.on('data', function(d) {
+                        data = data + d;
+                    });
+
+                    res.on('end', function() {
+
+                        switch(response_object.headers['content-type']) {
+                            case 'application/json; charset=utf-8':
+                                try {
+                                    data = JSON.parse(data);
+                                }
+                                catch(err) {
+
+                                }
+                                break;
+                        }
+                        response_object.data = data;
+                        callback(response_object);
+                    });
+
+                });
+
+                req.end();
+
+                req.on('error', function(e) {
+                    console.error(e);
+                });
+
+                */
 
             },
             'put_request': function(options, post_data ,callback) {

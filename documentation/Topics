@@ -1,0 +1,15 @@
+
+Topics
+
+(Get Request)
+topics/:account_id
+-Gets All Topics On The Account
+    Get Params
+        account_id
+
+(Get Request)
+topics/:account_id/project/:project_id
+-Gets All Topics Associated With A Project
+    Get Params
+        account_id
+        project_id

@@ -1,0 +1,23 @@
+
+Comments
+
+(Post Request)
+comments/:account_id/project/:project_id/section/:section/:section_object_id
+-Creates New Calendar
+    Get Params
+        account_id
+        project_id
+        section
+        section_object_id
+    Post Params
+        content
+        subscribers ( javascript array, like -> [4744618, 3744548] )
+        attachments ( javascript object, like -> [{"token": "", "name": "final_mockup.png"}] )
+
+(Delete Request)
+comments/:account_id/project/:project_id/comment/:comment_id
+-Deletes A Comment
+    Get Params
+        account_id
+        project_id
+        comment_id

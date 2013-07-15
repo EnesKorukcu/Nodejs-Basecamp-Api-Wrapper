@@ -1,2 +1,26 @@
 
-Accesses Routes
+Accesses
+
+(Get Request)
+accesses/:account_id/project/:project_id
+-Gets People Who Have Access To Given Project
+    Get params
+        account_id
+        project_id
+
+(Post Request)
+accesses/:account_id/project/:project_id
+-Grands A Project Access To Specified user_id or user_email
+    Get Params
+        account_id
+        project_id
+    Post Params
+        user_id -or- user_email
+
+(Delete Request)
+accesses/:account_id/project/:project_id/user/:user_id
+-Revokes The Project Access Of Specified User
+    Get params
+        account_id
+        project_id
+        user_id

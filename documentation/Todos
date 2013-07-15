@@ -1,0 +1,44 @@
+
+Todos
+
+(Get Request)
+todos/:account_id/project/:project_id/todo/:todo_id
+-Gets A Todo Associated With A Project
+    Get Params
+        account_id
+        project_id
+        todo_id
+
+(Delete Request)
+todos/:account_id/project/:project_id/todo/:todo_id
+-Deletes A Todo Associated With A Project
+    Get Params
+        account_id
+        project_id
+        todo_id
+
+(Post Request)
+todos/:account_id/project/:project_id/todolist/:todolist_id
+-Creates A Todo At Specified Todolist Associated With A Project
+    Get Params
+        account_id
+        project_id
+        todolist_id
+    Post Params
+        content
+        due_at ( date )
+        assignee ( javascript object, like -> {"id": 112233,"type": "Person"} )
+
+(Put Request)
+todos/:account_id/project/:project_id/todolist/:todolist_id
+-Creates A Todo At Specified Todolist Associated With A Project
+    Get Params
+        account_id
+        project_id
+        todolist_id
+    Post Params
+        content
+        due_at ( date )
+        assignee ( javascript object, like -> {"id": 112233,"type": "Person"} )
+        completed ( optional )
+        position ( optional )
